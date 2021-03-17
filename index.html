@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+        <link rel="stylesheet" href="CSS/styles.css"> 
+        <script>
+        </script> 
+    </head>
+        <body onload="loading()"> 
+            <div class="mainl" id="loader"> 
+            <div class="boxl"> 
+            <div class="l ln1"></div> 
+            <div class="l ln2"></div> 
+            <div class="l l1"></div> 
+            <div class="l l2"></div>
+            <div class="l l3"></div>
+            <div class="l l4"></div> 
+            <div class="l l5"></div> 
+            <div class="l l6"></div> 
+            <div class="l l7"></div> 
+            <div class="l l8"></div> 
+            <div class="l l9"></div> 
+            <div class="l l10"></div> 
+            <div class="l l11"></div> 
+            <div class="l l12"></div> 
+            <div class="l l13"></div> 
+            <div class="l l14"></div> 
+            <div class="l l15"></div> 
+            <div class="l l16"></div> 
+            <div class="l l17"></div> 
+            </div> 
+            </div>  
+        <div class ="main"> 
+            <div class="box"> 
+                <div class="st" id="sname">We Don't Talk Anymore</div> 
+                    <div class="at" id="singer">Charlie Puth</div> 
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqEHLXkp5W47sMN0f-5KC8OmYClCglbnm6ow&usqp=CAU" id="image" alt="song"> 
+                        <div class="q" id="quote">The most painful goodbyes are the ones that are never said and never explained. 
+                        </div> 
+                        <audio src="https://dl.dropbox.com/s/a24srq38kx7p3o3/Charlie-Puth-We-Dont-Talk-Anymor.MP3?row=0" id="audio" ></audio> 
+                            <div class="ctrl"> 
+                                <i class="fa fa-backward" id="prev"></i> 
+                                <i class="fa fa-play mb" id="play"></i>
+                                <i class="fa fa-forward" id="next" ></i> 
+                            </div>
+            </div> 
+        </div> 
+        <div class="mainsl"> 
+        <div class="ldr"> 
+        <div class="lin o"></div> 
+        <div class="lin tw"></div> 
+        <div class="lin thr"></div> 
+        </div> 
+        <script>  
+var pl= document.getElementById("loader"); 
+function loading(){ 
+    pl.style.display ="none";
+} 
+const img = document.querySelector("img"); 
+const title = document.getElementById("sname"); 
+const singer= document.getElementById("singer"); 
+const quote = document.getElementById("quote"); 
+const prev = document.getElementById("prev"); 
+const play = document.getElementById("play"); 
+const next = document.getElementById("next"); 
+const song = document.querySelector("audio"); 
+const data =
+[ 
+//1 
+{ 
+quote:"Esta fue la primera canción que me enviaste", 
+sname:"Hostage", 
+singer:"Billie Eilish", 
+image:"img//popular_item_5.jpg", 
+audio:"Audio//hostage.mp3", 
+},
+//2
+{ 
+quote:"Love takes off masks that we fear we cannot live without and know we cannot live within.", 
+sname:"Senorita", 
+singer:"Shawn Mendes, Camila Cabello", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0aAUgV3Ndc3mwM2OZkbjmsmSbyVDvMwShXsfB-SyXajoUPkk&s", 
+audio:"https://dl.dropbox.com/s/xsztb4shn41rzgk/Shawn-Mendes-Camila-Cabello-Seor.MP3?row=0", 
+}, 
+//3 
+{ 
+quote:"Just because things are bad doesn't mean they are going to be that way forever", 
+sname:"Just Give Me A Reason", 
+singer:"Pink", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWs1zJGm806YzKroesX1_cZH3PQytvZiSxg&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/44fphi97g0izfxy/Pnk-Just-Give-Me-a-Reason-Lyrics.MP3?row=0", 
+}, 
+//4 
+{ 
+quote:"It is sad how someone can go from being the reason your smiling to being the reason of your cry", 
+sname:"Just A Dream", 
+singer:"Nelly", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR137OZFfpMoBHtBCwFwOenf_IBl9_yQDK2xo_cpYoITdhJ_Vg&s", 
+audio:"https://dl.dropbox.com/s/1aer368odwkmieq/Nightcore-Just-A-Dream-Switching.MP3?row=0", 
+},
+//5 
+{ 
+quote:"It's sad when someone you know becomes someone you knew.", 
+sname:"Without Me", 
+singer:"Hasley", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJgRk83Dlaf1WW9CZvzBL2_AkPrEg4aWR4g&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/w6xpj62kfngv56e/Halsey-Without-Me-Lyrics.MP3?row=0", 
+}, 
+//6 
+{ 
+quote:"If there is no one to hold your hand put your hands in your pocket and continue your walk.", 
+sname:"Queen Of Mean", 
+singer:"Sarah Jeffery", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6b5xmhttHMqW57YzleVjPFJq54o3-ARIpvw&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/bc66654hcz3tzez/Sarah-Jeffery-Queen-of-Mean-From.MP3?row=0", 
+}, 
+//7 
+{ 
+quote:"Pain, tears heartbreak makes us stronger, braver wiser.Thank the past for better future.", 
+sname:"Older", 
+singer:"Sasha Sloan", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlMhuHU726dck6Bzs6vlVJnoJ40oCQWK_ICQ&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/598r6r08phd0e6b/Nightcore-OlderSasha-Sloan-Lyric.MP3?row=0",
+}, 
+//8 
+{ 
+quote:"Life is like riding a bicycle. To keep your balance, you must keep moving.", 
+sname:"Story Of My Life", 
+singer:"One Direction", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7uK720nZ_apYoFIR_QqCa_0Vg1wEmOWQ8oA&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/1pt7ibsibbw5bmq/One-Direction-Story-of-My-Life.MP3?row=0", 
+}, 
+//9 
+{ 
+quote:"A good friend is like a four-leaf clover: hard to find and lucky to have.", 
+sname:"FRIENDS", 
+singer:"Marshmello & Anne Marie", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTnOG_7TCqngL5v-p3G02xUCgGNHafXMdjPA&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/jv8unuq3cqi8t71/Marshmello-Anne-Marie-FRIENDS-Ly.MP3?row=0", 
+}, 
+//10 
+{ 
+quote:"Sometimes, I dont know what haunts me more.. The memories of you or the happy person I used to be", 
+sname:"Lose You To Love Me", 
+singer:"Selena Gomez", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36SC-Domwe_0T96B4rBqeoiDE2Pqy-ZIiWg&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/3cm00stjjxq9dqa/Selena-Gomez-Lose-You-To-Love-Me.MP3?row=0", 
+}, 
+//11
+{ 
+quote:"The most painful goodbyes are the ones that are never said and never explained.", 
+sname:"Say Something", 
+singer:"Nightcore", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uli_UlwidBnIfpT2SEr8Jfn1rUTsozlfhw&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/pt45haqyy9jesw3/Nightcore-Say-Something-Switchin.MP3?row=0", 
+}, 
+//12 
+{ 
+quote:"Never idealize others. They will never live up to your expectations.", 
+sname:"I Forgot That You Existed", 
+singer:"Taylor Swift", 
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJWA7HdLnhTybYrQm9splWIQfBWcKIkuWdQ&usqp=CAU", 
+audio:"https://dl.dropbox.com/s/9mj73m7xkzty3ra/Taylor-Swift-I-Forgot-That-You-E.MP3?row=0", 
+}, 
+]; 
+let songplay = false; 
+let pos = 1; 
+const playsong = () => { 
+    songplay = true; 
+    song.play(); 
+    img.classList.add("anime"); 
+    play.classList.replace("fa-play", "fa-pause"); 
+}; 
+const pausesong = () => { 
+    songplay = false; 
+    song.pause(); 
+    img.classList.remove("anime");
+    play.classList.replace("fa-pause", "fa-play"); 
+}; 
+    play.addEventListener( "click", () =>{ 
+    if (songplay){ 
+        pausesong(); 
+} 
+    else{ playsong(); 
+    } });
+//loading songs 
+//array ends 
+const load = (songs) =>{ 
+    document.querySelector('.mainsl').style.display ="grid"; 
+    title.innerText = songs.sname; 
+    singer.innerText = songs.singer; 
+    song.src = songs.audio; 
+    img.src = songs.image; 
+    song.addEventListener("canplay",()=>{ 
+ //pausesong(); 
+    document.querySelector('.mainsl').style.display ="none"; }); 
+    quote.innerText = songs.quote; 
+}; 
+pos = 0; 
+    const songn = () => { 
+    pos=(pos + 1) % data.length; 
+    load(data[pos]); playsong(); 
+    }; 
+const songp = () => { 
+    pos=(pos - 1 + data.length) % data.length; 
+    load(data[pos]); playsong(); 
+}; 
+next.addEventListener("click", songn); prev.addEventListener("click", songp); </script> 
+</body> 
+</html> 
